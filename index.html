@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella García Merlano - Projects</title>
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Isabella García Merlano</h1>
+        <h2>Multimedia Engineer | Game Designer</h2>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="index.html">Projects</a>
+        <a href="about.html" class="active">About me</a>
+    </div>
+
+    <!-- Main Content -->
+    
+    <!-- Projects Section -->
+
+    <div id="projects">
+        <h1>Projects</h1>
+        
+        <!-- Featured Projects Section -->
+        <div id="featured-projects">
+            <h2>Featured Projects</h2>
+    
+            <!-- Proyecto: Moebius -->
+            <div class="content">
+                <!-- Left Column -->
+                <div class="project-info">
+                    <h1>Möbius</h1>
+                    <p><strong>Project Type:</strong> An RPG Demo with Decision Making (Game Jam)<br>
+                        <strong>Game Jam:</strong> Unisabana Gamejam 2023<br>
+                        <strong>Team size:</strong> 4<br>
+                        &emsp;➥Isabella Garcia Merlano<br>
+                        &emsp;➥Shantal Ramirez Cubillos<br>
+                        &emsp;➥Julian Ayala<br>
+                        &emsp;➥Santiago Peña Beltran<br>
+                        <strong>Roles:</strong> Project Manager, Artistic Director, Story and Mechanics Director, Programmer<br>
+                        <strong>Software Used:</strong> RPG Maker MV<br>
+                        <strong>Duration:</strong> June 3rd - 5th 2023<br>
+                        <strong>Awards & Recognition:</strong> First place award</p>     
+                    <!-- Secciones plegables -->
+                    <div class="toggle-section">
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Game Description</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <p>Möbius is a surreal horror RPG developed in 48 hours for the Unisabana Gamejam. The story follows an astronaut who wakes up in a broken spaceship, trapped in a fragmented reality filled with analog horror elements. The player's decisions affect the course of the story, leading them to one of several possible endings. Inspired by psychological horror and analog horror, Moebius seeks to immerse the player in a disconcerting and atmospheric environment where every choice counts.</p>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Key Contributions and Responsabilities</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <ul>
+                                <li><strong>Project Management</strong>: Coordinated the team and ensured the integration of all parts of the development, maintaining the workflow and meeting delivery times.</li>
+                                <li><strong>Art Direction</strong>: Defined the visual aesthetics of the game, focusing on an analog horror style to intensify the feeling of disorientation and threat in the player.</li>
+                                <li><strong>Narrative and Story Direction</strong>: Developed the core story and surreal horror themes, designing a world where the player's decisions affect the outcome. The narrative focuses on the atmosphere of loneliness and the tension of the unknown, using influences from analog horror.</li>
+                                <li><strong>Decision Mechanics Design and Programming</strong>: Designed and implemented a decision-making system in RPG Maker MV that allows the player to choose between different options, each leading to a different ending. These decisions are designed to increase the immersion and emotional impact of the story.</li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Gameplay Components</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <ul>
+                                <li><strong>Decision Making and Multiple Endings</strong>: The player must make critical decisions that influence the course of the story, leading to different endings and creating a personalized horror experience.</li>
+                                <li><strong>Surreal Horror Aesthetics and Narrative</strong>: Spatial setting inspired by analog horror, combining visual and sound elements that create an atmosphere of unease and mystery.</li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Reflection and Learning</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <p>Möbius allowed me to explore horror narrative in a decision-making environment, integrating choice mechanics and multiple endings to create an immersive experience. This project was an opportunity to delve deeper into art direction and narrative in the context of a Game Jam, strengthening my ability to coordinate design elements in a limited time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <div class="carousel-container">
+                        <div class="carousel-main" id="carousel-main-moebius">
+                            <button class="arrow arrow-left" id="prev-moebius">&#8249;</button>
+                            <img src="mobiusarch/mob1.png" alt="Screenshot 1" class="active">
+                            <img src="mobiusarch/mob2.gif" alt="Screenshot 2">
+                            <img src="mobiusarch/mob3.png" alt="Screenshot 3">
+                            <img src="mobiusarch/mob4.gif" alt="Screenshot 4">
+                            <img src="mobiusarch/mob5.gif" alt="Screenshot 5">
+                            <img src="mobiusarch/mob6.png" alt="Screenshot 6">
+                            <img src="mobiusarch/mob7.gif" alt="Screenshot 7">
+                            <button class="arrow arrow-right" id="next-moebius">&#8250;</button>
+                        </div>            
+        
+                        <div class="carousel-thumbnails" id="thumbnails-moebius">
+                            <img src="mobiusarch/mob1.png" alt="Thumbnail 1" class="active">
+                            <img src="mobiusarch/mob2.gif" alt="Thumbnail 2">
+                            <img src="mobiusarch/mob3.png" alt="Thumbnail 3">
+                            <img src="mobiusarch/mob4.gif" alt="Thumbnail 4">
+                            <img src="mobiusarch/mob5.gif" alt="Thumbnail 5">
+                            <img src="mobiusarch/mob6.png" alt="Thumbnail 6">
+                            <img src="mobiusarch/mob7.gif" alt="Thumbnail 7">
+                        </div>
+                    </div>
+        
+                    <!-- Buttons -->
+                    <div class="buttons">
+                        <!-- Enlace al PDF -->
+                        <a href="mobiusarch/Game Design Document Moebius.pdf" target="_blank">Game Design Document</a>
+                        <!-- Enlace a la página de Itch.io -->
+                        <a href="https://mayvisan.itch.io/moebius" target="_blank">Itch.io Page</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Proyecto: Master -->
+            <div class="content">
+                <!-- Left Column -->
+                <div class="project-info">
+                    <h1>Master</h1>
+                    <p><strong>Project Type:</strong> A board game prototype<br>
+                    <strong>Game Jam:</strong> Unisabana Gamejam 2023<br>
+                    <strong>Team size:</strong> 4<br>
+                    &emsp;➥Isabella Garcia Merlano<br>
+                    &emsp;➥Natalia Fúquene Arias<br>
+                    &emsp;➥Mateo Montaño Gaona<br>
+                    &emsp;➥Luz Aydee Madrigal Diaz<br>
+                    <strong>Roles:</strong> Game Designer and Concept Artist<br>
+                    <strong>Duration:</strong> March 8th - May 30th 2021<br>
+                    
+                    <!-- Secciones plegables -->
+                    <div class="toggle-section">
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Game Description</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <p>Master is a strategic card game developed as an academic project for the subject Design 1. Inspired by the mechanics of a popular card game (reference), Master adapts the dynamics of skill collection and direct confrontation between players, where each competes to accumulate the greatest amount of experience in various areas of life. Players must form sets of cards to advance, block the progress of their opponents, and challenge others to obtain additional cards</p>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Key Contributions and Responsabilities</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <ul>
+                                <li><strong>Rules Design Collaboration: </strong>Worked alongside the team to develop the game's rules, balancing collection strategy and player challenge mechanics.</li>
+                                <li><strong>Card Art Sketches</strong>: Created concept sketches for the cards, defining the visual style of each skill category (Knowledge, Arts, Life, Sport) and establishing a consistent aesthetic for the game.</li>
+                                <li><strong>Game Mechanics Development</strong>: Contributed to the creation of interaction and card draw mechanics, which add an element of direct competition and keep the game dynamic.</li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Gameplay Components</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <ul>
+                                <li><strong>Skill Cards</strong>: 120 cards divided into skill and wildcard categories, providing strategic options for progression and interaction between players.</li>
+                                <li><strong>Objective of the Game</strong>: Accumulate the most experience at the end of the game by building skill sets and facing other players to increase your score.</li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Reflection and Learning</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <p>This project was an opportunity to apply design principles learned in class by adapting mechanics from an existing card game and exploring the creation of social interaction and competition systems in a board game. Additionally, working as a team on design and art allowed me to experiment with integrating visual elements and mechanics to create an immersive gaming experience.</p>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                <div class="carousel-container">
+                    <div class="carousel-main" id="carousel-main-master">
+                        <button class="arrow arrow-left" id="prev-master">&#8249;</button>
+                        <img src="mastersarch/master1.jpg" alt="Screenshot 1" class="active">
+                        <img src="mastersarch/master2.gif" alt="Screenshot 2">
+                        <img src="mastersarch/master3.jpg" alt="Screenshot 3">
+                        <img src="mastersarch/master4.gif" alt="Screenshot 4">
+                        <img src="mastersarch/master5.gif" alt="Screenshot 5">
+                        <img src="mastersarch/master6.jpg" alt="Screenshot 6">
+                        <img src="mastersarch/master7.jpg" alt="Screenshot 7">
+                        <button class="arrow arrow-right" id="next-master">&#8250;</button>
+                    </div>
+    
+                    <div class="carousel-thumbnails" id="thumbnails-master">
+                        <img src="mastersarch/master1.jpg" alt="Thumbnail 1" class="active">
+                        <img src="mastersarch/master2.gif" alt="Thumbnail 2">
+                        <img src="mastersarch/master3.jpg" alt="Thumbnail 3">
+                        <img src="mastersarch/master4.gif" alt="Thumbnail 4">
+                        <img src="mastersarch/master5.gif" alt="Thumbnail 5">
+                        <img src="mastersarch/master6.jpg" alt="Thumbnail 6">
+                        <img src="mastersarch/master7.jpg" alt="Thumbnail 7">
+                    </div>
+                </div>
+    
+                <!-- Buttons -->
+                <div class="buttons">
+                    <!-- Enlace al PDF -->
+                    <a href="mastersarch/Master Rules.pdf" target="_blank">Rules and more</a>
+                </div>
+                </div>
+            </div>
+           
+    
+            <!-- Proyecto: The Tale of the Broken Spell -->
+            <div class="content">
+
+                <!-- Left Column -->
+                <div class="project-info">
+                    <h1>The Tale of the Broken Spell</h1>
+                <p><strong>Project Type:</strong> Prototype of a Puzzle and Platform Video Game with Reality-Changing Mechanics (Game Jam) <br>
+                <strong>Game Jam:</strong> Women Game Jam 2024<br>
+                <strong>Team size:</strong> 7<br>
+                &emsp;➥Isabella Garcia Merlano<br>
+                &emsp;➥Danna Milena Quimbay Galindo<br>
+                &emsp;➥María Alejandra Jiménez Jiménez<br>
+                &emsp;➥Jesus David Ruiz<br>
+                &emsp;➥Gustavo Alejandro León Pulido<br>
+                &emsp;➥David Santiago Frade<br>
+                &emsp;➥vladizgg (Discord)<br>
+                &emsp;➥vae_l (Discord)<br>
+                <strong>Roles:</strong> Project Manager, Artistic Director, Scriptwriter and Mechanics Designer<br>
+                <strong>Software Used:</strong> Unity 3D<br>
+                <strong>Duration:</strong> August 9th - 11th 2024<br>
+                
+                    <!-- Secciones plegables -->
+                    <div class="toggle-section">
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Game Description</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <p>The Tale of the Broken Spell is a puzzle-platformer in which a young mage casts an incomplete spell to go back in time, transporting her to different versions of the same reality. Trapped in a time-space loop, the mage must explore three alternate environments of an ancient temple and collect fragments of a lost grimoire to complete the spell and return to her original world. Each reality offers unique clues and challenges that help the player progress and reach the ultimate goal.</p>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Key Contributions and Responsabilities</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <ul>
+                                <li><strong>Project Management and Direction: </strong>I coordinated the team to ensure a smooth integration between narrative, visual design, and game mechanics, meeting Game Jam deadlines.</li>
+                                <li><strong>Art Direction</strong>: I developed the visual aesthetics of the game, designing different environments and creating animations for the protagonist's sprites, with the aim of differentiating each reality.</li>
+                                <li><strong>Narrative and Scriptwriting</strong>: I helped writing the story of the sorceress trapped in the time loop and created dialogues that guide the player in their search for the grimoire fragments.</li>
+                                <li><strong>Contribution to Mechanics Design</strong>: I proposed ideas for the reality-shifting mechanic, which allows the player to alternate between three versions of the temple: a well-preserved temple, ruins overrun by nature, and a dark castle. I also designed the structure of the puzzles in each environment so that the player progressively unlocks the spell.</li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Gameplay Components</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <ul>
+                                <li><strong>Three Different Realities</strong>: The incomplete spell transports the protagonist between the Temple of Time, the Ancient Ruins, and the Dark Castle, each with specific challenges and grimoire fragments to collect.</li>
+                                <li><strong>Progression Puzzles</strong>: The player solves puzzles in each environment to advance the story and unlock new areas in the other realities.</li>
+                            </ul>
+                        </div>
+                        <hr class="divider">
+        
+                        <div class="header-toggle" onclick="toggleContent(this)">
+                            <h2>Reflection and Learning</h2>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="content-toggle">
+                            <p>The Tale of the Broken Spell  was a valuable learning experience, as it allowed me to explore mechanics and narrative design in a Game Jam context. Collaboration within the team and creating an interactive narrative with reality-shifting mechanics were key to building a cohesive gameplay experience.</p>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <div class="carousel-container">
+                        <div class="carousel-main" id="carousel-main-spell">
+                            <button class="arrow arrow-left" id="prev-spell">&#8249;</button>
+                            <img src="ttobs/spell1.png" alt="Screenshot 1" class="active">
+                            <img src="ttobs/spell2.gif" alt="Screenshot 2">
+                            <img src="ttobs/spell3.png" alt="Screenshot 3">
+                            <img src="ttobs/spell4.gif" alt="Screenshot 4">
+                            <img src="ttobs/spell5.png" alt="Screenshot 5">
+                            <img src="ttobs/spell6.png" alt="Screenshot 6">
+                            <img src="ttobs/spell7.png" alt="Screenshot 7">
+                            <img src="ttobs/spell8.png" alt="Screenshot 8">
+                            <button class="arrow arrow-right" id="next-spell">&#8250;</button>
+                        </div>
+        
+                        <div class="carousel-thumbnails" id="thumbnails-spell">
+                            <img src="ttobs/spell1.png" alt="Thumbnail 1" class="active">
+                            <img src="ttobs/spell2.gif" alt="Thumbnail 2">
+                            <img src="ttobs/spell3.png" alt="Thumbnail 3">
+                            <img src="ttobs/spell4.gif" alt="Thumbnail 4">
+                            <img src="ttobs/spell5.png" alt="Thumbnail 5">
+                            <img src="ttobs/spell6.png" alt="Thumbnail 6">
+                            <img src="ttobs/spell7.png" alt="Thumbnail 7">
+                            <img src="ttobs/spell8.png" alt="Thumbnail 8">
+                        </div>
+                    </div>
+        
+                    <!-- Buttons -->
+                    <div class="buttons">
+                        <!-- Enlace al PDF -->
+                        <a href="ttobs/Game Design Document The Tale Of The Broken Spell.pdf" target="_blank">Game Design Document</a>
+                        <a href="https://mayvisan.itch.io/the-tale-of-the-broken-spell" target="_blank">Itch.io page</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+
+    <!-- Social media -->
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/isagarciamerlano" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://mayvisan.itch.io" target="_blank">
+            <img src="icons/itchio.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/mayviesan/" target="_blank">
+            <img src="icons/instagram.png" alt="Instagram">
+        </a>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Isabella García Merlano. All rights reserved.</p>
+        <p>Projects and materials property of their respective owners.</p>
+    </footer>    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
