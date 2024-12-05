@@ -87,8 +87,17 @@ body {
 }
 
 .project-info p {
-    line-height: 1.6;
+    font-size: 15px; /* Tamaño más pequeño de fuente */
+    line-height: 1.5; /* Ajusta la separación entre líneas */
+    color: #555; /* Color ligeramente más claro para facilitar la lectura */
+    margin-bottom: 10px; /* Espaciado entre párrafos */
 }
+
+.content-toggle {
+    font-size: 13px; /* Ajusta el tamaño de las descripciones dentro de las secciones desplegables */
+    line-height: 1.4;
+}
+
 
 /* Buttons */
 .buttons {
