@@ -1,0 +1,487 @@
+.header {
+    background-image: url("header.png"); /* Ruta de tu imagen */
+    background-size: cover; /* La imagen se adapta para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white;
+    padding: 40px 20px; /* Ajusta el padding para dar espacio al contenido */
+    text-align: center;
+}
+
+
+.header h1, .header h2 {
+    margin-top: 80px; /* Ajusta la posición del texto si la imagen está encima */
+}
+
+
+body {
+    font-family: 'Syne', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #ec407a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header h2 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Navigation */
+.navigation {
+    text-align: center;
+    background-color: #fce4ec;
+    padding: 10px 0;
+}
+
+.navigation a {
+    color: #ec407a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Dos columnas */
+    gap: 20px; /* Espaciado entre columnas */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project-info p {
+    line-height: 1.6;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons a {
+    background-color: #ec407a;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.buttons a:hover {
+    background-color: #d81b60;
+}
+
+/* Carousel */
+.carousel-container {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-main img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-main img.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center; /* Alinea los thumbnails al centro */
+    padding: 10px;
+    gap: 10px;
+    overflow-x: auto; /* Activa el scroll horizontal */
+    overflow-y: hidden; /* Oculta el scroll vertical */
+    white-space: nowrap; /* Evita que las miniaturas se envuelvan */
+    max-width: 540px; /* Ajusta el ancho para mostrar 5 thumbnails */
+    margin: 0 auto; /* Centra el contenedor de thumbnails */
+    scrollbar-width: thin; /* Personaliza el ancho del scrollbar en navegadores compatibles */
+    scrollbar-color: #ec407a transparent; /* Estilo del scrollbar */
+}
+
+.carousel-thumbnails::-webkit-scrollbar {
+    height: 8px; /* Altura del scrollbar horizontal */
+}
+
+.carousel-thumbnails::-webkit-scrollbar-thumb {
+    background-color: #ec407a; /* Color del scrollbar */
+    border-radius: 10px; /* Redondeo del scrollbar */
+}
+
+.carousel-thumbnails::-webkit-scrollbar-track {
+    background: transparent; /* Fondo del track del scrollbar */
+}
+
+.carousel-thumbnails img {
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    width: auto; /* Mantén el ancho automático */
+    height: 57px; /* Fija la altura para uniformidad */
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción */
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.carousel-thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-thumbnails img.active {
+    border: 2px solid #ec407a;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Toggle Section */
+.toggle-section {
+    margin-top: 20px;
+}
+.header-toggle {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 16px 20px;
+cursor: pointer;
+background-color: rgba(223, 94, 137, 0.1);
+color: #ec407a;
+border-radius: 5px;
+}
+
+.header-toggle:hover {
+    background-color: rgba(236, 64, 122, 0.2);
+}
+
+.header-toggle h2 {
+    margin: 0;
+    font-size: 18px;
+    flex: 1; /* Asegura que el texto ocupe todo el espacio disponible */
+}
+
+.header-toggle .arrow {
+    width: 5px; /* Tamaño uniforme para las flechas */
+    height: 5px;
+    display: flex;
+    align-items: center; /* Centra verticalmente la flecha */
+    justify-content: center; /* Centra horizontalmente la flecha */
+    background-color: #6f6f6f00; /* Fondo para visibilidad */
+    color: #ec407a;
+    border-radius: 50%; /* Forma circular */
+    transition: transform 0.3s ease;
+    transform-origin: center; /* Centra la rotación */
+    position: relative; /* Mantiene la flecha fija al lado derecho */
+}
+
+
+.header-toggle .arrow.expanded {
+    transform: rotate(180deg);
+}
+
+
+
+.content-toggle {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 20px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    font-size: 14px;
+    color: #333;
+}
+
+.content-toggle.open {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+/* Featured Projects Section */
+#featured-projects {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fce4ec; /* Fondo similar al de la navegación */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#featured-projects h2 {
+    color: #ec407a;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#featured-projects .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    margin-bottom: 20px; /* Asegura separación entre proyectos */
+}
+
+/* Ajuste específico para el carrusel de "The Tale of the Broken Spell" */
+#carousel-main-spell {
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    max-width: 100%; /* Asegura que no se desborde */
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 32px; /* Ajusta el tamaño si es necesario */
+    margin: 20px 0; /* Espaciado opcional arriba y abajo */
+    color: #ec407a;
+}
+
+/* About Me Section */
+#about {
+    padding: 40px 20px;
+    background-color: #fce4ec;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #ec407a;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 55% 45%; /* Dos columnas */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo img {
+    width: 350px; /* Aumenta el tamaño de la imagen */
+    height: 350px; /* Asegura proporciones */
+    border-radius: 50%; /* Imagen redonda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que se comporte como un bloque centrado */
+}
+
+
+/* Botones */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center; 
+    flex-wrap: wrap; /* Permite que se ajusten si no hay suficiente espacio */
+    padding-right: 20px; /* Opcional: Añade un pequeño espacio del borde derecho */
+}
+
+.buttons a {
+    background-color: #ec407a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px; /* Botones más grandes */
+    border-radius: 25px; /* Bordes más redondeados */
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Más profundidad */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #d81b60;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    gap: 10px; /* Espaciado entre los íconos */
+}
+
+.social-icons a img {
+    width: 40px; /* Tamaño de los íconos */
+    height: 40px;
+    border-radius: 50%; /* Redondear los íconos */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animación */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Ampliar ligeramente al pasar el mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+.about-text {
+    max-width: 600px; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra el texto */
+    text-align: justify; /* Mantiene el texto alineado de forma estética */
+    line-height: 1.8; /* Aumenta la separación entre líneas para mejor lectura */
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+#about .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra el texto del correo */
+}
+
+#about .email-text {
+    background-color: #ec407a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+}
+
+#about .email-text:hover {
+    transform: scale(1.1); /* Amplía ligeramente el botón */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+#about .icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; /* Transición suave por defecto */
+}
+
+#about .email-text:hover .icon {
+    animation: bell-swing 0.5s ease; /* Aplica la animación al pasar el mouse */
+}
+
+.footer {
+    background-color: #ec407a; /* Fondo principal */
+    color: white; /* Texto blanco */
+    padding: 20px 0; /* Espaciado */
+    text-align: center; /* Texto centrado */
+    font-size: 14px; /* Tamaño de fuente */
+    margin-top: 40px; /* Espacio antes del footer */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.footer p {
+    margin: 5px 0; /* Espaciado entre líneas */
+    line-height: 1.5; /* Altura de línea */
+    font-weight: normal; /* Texto regular */
+}
+
+.footer p:first-child {
+    font-weight: bold; /* Negrita para el primer mensaje */
+}
+
+
+@keyframes bell-swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
